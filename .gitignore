@@ -14,9 +14,8 @@ Desktop.ini
 *.css.map
 
 # Project
-demo/
+src/
 build/
 src/demo/demo-*/hypnoload.scss
 ## (better solution?)
-!src/build
-!src/demo
+!demo/

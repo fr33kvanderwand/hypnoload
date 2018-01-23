@@ -1,0 +1,102 @@
+/**
+ *  demo B
+ */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0; }
+
+section {
+  height: 20rem;
+  width: 50%;
+  float: left;
+  position: relative; }
+  section:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+/**
+ *  hypnoload.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+/**
+ *  hypnoload.style.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+@keyframes hypnoload-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(720deg); } }
+.hypnoload,
+.hypnoload * {
+  box-sizing: border-box; }
+
+.hypnoload {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.2rem;
+  height: 6.2rem;
+  padding: 3;
+  letter-spacing: 3px; }
+  .hypnoload span {
+    display: block;
+    border: 0.6rem solid transparent;
+    border-top-color: #2648DA;
+    border-bottom-color: #2648DA;
+    border-radius: 50%;
+    animation: hypnoload-spin 3s steps(180) infinite;
+    position: absolute;
+    will-change: transform; }
+  .hypnoload span:nth-child(1) {
+    left: 0rem;
+    top: 0rem;
+    width: 6.2rem;
+    height: 6.2rem;
+    animation-duration: 3s;
+    animation-timing-function: steps(180); }
+  .hypnoload span:nth-child(2) {
+    left: 0.5rem;
+    top: 0.5rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    animation-duration: 2.5s;
+    animation-timing-function: steps(150); }
+  .hypnoload span:nth-child(3) {
+    left: 1rem;
+    top: 1rem;
+    width: 4.2rem;
+    height: 4.2rem;
+    animation-duration: 2s;
+    animation-timing-function: steps(120); }
+  .hypnoload.hyl-reverse span:nth-child(even) {
+    animation-direction: reverse; }
+  .hypnoload.hyl-rounded span {
+    box-shadow: 0 0.6rem 0 #2648DA;
+    border-color: transparent; }
+  .hypnoload.hyl-colors span:nth-child(1) {
+    border-top-color: #FF0000;
+    border-bottom-color: #FF0000; }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(1) {
+    border-color: transparent;
+    box-shadow: 0 0.6rem 0 #FF0000; }
+  .hypnoload.hyl-colors span:nth-child(2) {
+    border-top-color: #00FF00;
+    border-bottom-color: #00FF00; }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(2) {
+    border-color: transparent;
+    box-shadow: 0 0.6rem 0 #00FF00; }
+  .hypnoload.hyl-colors span:nth-child(3) {
+    border-top-color: #0000FF;
+    border-bottom-color: #0000FF; }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(3) {
+    border-color: transparent;
+    box-shadow: 0 0.6rem 0 #0000FF; }
+
+/*# sourceMappingURL=demo.css.map */
