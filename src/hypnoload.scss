@@ -1,0 +1,132 @@
+/**
+ *  hypnoload.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+ 
+$width: 1rem !default;              // thickness of a spinning-wheel [1rem]
+$count: 3 !default;                 // how many spinning-wheels [3]
+$overlap: 0 !default;               // how much a spinning-wheel overlaps the next one [0]
+$inner-space: 0 !default;           // 'missing' inner spinning wheel [0]
+
+$color: #C4C4C4 !default;         // base fill color [#C4C4C4]
+$colors: () !default;               // defines a color for each spinning-wheel [()]
+$color-dir: 'in' !default;          // in which 'direction' the color manipulation should go ['in']
+$col-change: 50 !default;           // how much the color should change [50]
+$color-func: 'darken' !default;     // the function used to manipulate the colors ['darken']
+
+$duration-max: 4 !default;          // maximal animation duration (biggest spinning wheel) [4]
+$duration-min: 1 !default;          // minimal animiaton duration (smallest spinning wheel) [1]
+$fps: 60 !default;                  // desired FPS [60]
+
+@import "hypnoload.style.scss";
+
+$element-count: $count + $inner-space;
+$max-size: $element-count * $width * 2;
+
+// reveses a list
+@function reverse($list) {
+  $result: ();
+  @for $i from length($list)*-1 through -1 {
+    $result: append($result, nth($list, abs($i)))
+  }
+  @return $result;
+}
+
+// populate $colors
+@if length($colors) == 0 {
+  @for $i from 1 to ($element-count - $inner-space + 1) {
+    @if $color-func == 'darken' {
+      $colors: append($colors, darken($color, ($col-change/ $count * $i) ));
+    }
+    @if $color-func == 'lighten' {
+      $colors: append($colors, lighten($color, ($col-change / $count * $i) ));      
+    }
+    @if $color-func == 'saturate' {
+      $colors: append($colors, saturate($color, ($col-change / $count * $i) ));      
+    }
+    @if $color-func == 'desaturate' {
+      $colors: append($colors, desaturate($color, ($col-change / $count * $i) ));      
+    }
+  }
+
+  @if $color-dir == 'out' {
+    $colors: reverse($colors);
+  }
+}
+
+@keyframes hypnoload-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+.hypnoload,
+.hypnoload * {
+  box-sizing: border-box;
+}
+
+.hypnoload {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $max-size + $overlap*2;
+  height: $max-size + $overlap*2;
+  padding: length($colors);
+  letter-spacing: $count * 1px; // used to add spans via JS
+
+  span {
+    display: block;
+    border: ($width + $overlap) solid transparent;
+    border-top-color: $color;
+    border-bottom-color: $color;
+    border-radius: 50%;
+    animation: hypnoload-spin ($duration-max + s) steps($fps * $duration-max) infinite;
+    position: absolute;
+    will-change: transform;
+  }
+  // position, size and animation for each spinning-wheel
+  @for $i from 1 to ($element-count - $inner-space + 1) {
+    span:nth-child(#{$i}) {
+      left: ($max-size - ($max-size - (($i - 1) * (2 * $width)))) / 2;
+      top: ($max-size - ($max-size - (($i - 1) * (2 * $width)))) / 2;
+
+      width: $max-size - (($i - 1) * (2 * $width)) + $overlap*2;
+      height: $max-size - (($i - 1) * (2 * $width)) + $overlap*2;
+
+      animation-duration: ( ( ($duration-max - $duration-min) / ($element-count - 1) ) * ($element-count - $i) + $duration-min )+s;
+      animation-timing-function: steps($fps * ( ( ($duration-max - $duration-min) / ($element-count - 1) ) * ($element-count - $i) + $duration-min ) );
+    }
+  }
+
+  // REVERSE
+  &.hyl-reverse {
+    span:nth-child(even) {
+      animation-direction: reverse;
+    }
+  }
+  // ROUNDED
+  &.hyl-rounded {
+    span {
+      box-shadow: 0 $width + $overlap 0 $color;
+      border-color: transparent;
+    }
+
+  }
+  // COLORS
+  &.hyl-colors {
+    @for $i from 1 to ($element-count - $inner-space + 1) {
+      span:nth-child(#{$i}) {
+        border-top-color: nth($colors,$i);
+        border-bottom-color: nth($colors,$i);
+      }
+
+      &.hyl-rounded {
+        span:nth-child(#{$i}) {
+          border-color: transparent;
+          box-shadow: 0 $width + $overlap 0 nth($colors,$i);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Default
+*.log
+*.old*
+*.*-workspace
+
+# OS
+.DC_Store
+Thumbs.db
+._*
+Desktop.ini
+
+# SASS
+.sass-cache/
+*.css.map
+
+# Project
+demo/
+build/
+src/demo/demo-*/hypnoload.scss
+## (better solution?)
+!src/build
+!src/demo

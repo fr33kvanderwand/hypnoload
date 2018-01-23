@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+section {
+    height: 20rem;
+    width: 50%;
+    float: left;
+    position: relative;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
