@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - nothing
 
+## [1.0.1] - 2018-01-25
+### Removed
+- `padding: length($colors);` - used to check length of $colors-list; not productive - dev-code;
+
 ## [1.0.0] - 2018-01-23
 ### Added
 - [`.gitignoe`](./.gitignore) - git ignore file
@@ -39,5 +43,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [`demo/demo-c/demo.scss`](./src/demo/demo-c/demo.scss) - style for demo c
 - [`demo/demo-c/hypnoload.style.scss`](./src/demo/demo-c/hypnoload.style.scss) - hypnoload-style (config) for demo c
 
-[Unreleased]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/fr33kvanderwand/hypnoload/compare/master...develop
+[1.0.1]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/fr33kvanderwand/hypnoload/tree/v1.0.0

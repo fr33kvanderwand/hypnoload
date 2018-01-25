@@ -72,7 +72,6 @@ $max-size: $element-count * $width * 2;
   transform: translate(-50%, -50%);
   width: $max-size + $overlap*2;
   height: $max-size + $overlap*2;
-  padding: length($colors);
   letter-spacing: $count * 1px; // used to add spans via JS
 
   span {
