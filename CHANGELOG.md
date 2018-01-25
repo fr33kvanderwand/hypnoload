@@ -7,10 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- nothing
+- `$bg-color` -  background color
+- `$bg-padding` - background overlap
+- `$shadow:` - background shadow (not pixelperfect in FF)
+- `src/demo-d/` - Demo D: background-demo
 
 ### Changed
-- nothing
+- [`build-demo.sh`](./build-demo.sh) - added Demo D
+- [`demo/index.html`](./src/demo/index.html) - added Demo D
 
 ### Removed
 - nothing

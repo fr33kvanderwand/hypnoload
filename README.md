@@ -27,18 +27,22 @@ import [`hypnoload.scss`](./src/hypnoload.scss) to your sass or include [`hypnol
 adopt [`hypnoload.style.scss`](./src/hypnoload.style.scss) for your needs:
 ```scss
 $width: 1rem;                       // thickness of a spinning-wheel [1rem]
-$count: 9;                          // how many spinning-wheels [3]
-$overlap: 0rem;                     // how much a spinning-wheel overlaps the next one [0]
-$inner-space: 0;                    // 'missing' inner spinning wheel [0]
+$count: 3;                          // how many spinning-wheels [3]
+$overlap: .1rem;                    // how much a spinning-wheel overlaps the next one [0]
+$inner-space: 1;                    // 'missing' inner spinning wheel [0]
 
-$color: #DA4826;                    // base color fill color [#C4C4C4]
+$color: #DA4826;                    // base fill color [#C4C4C4]
 $colors: ();                        // defines a color for each spinning-wheel [()]
 $color-dir: 'in';                   // in which 'direction' the color manipulation should go ['in']
-$col-change: 25;                    // how much the color should change [50]
-$color-func: 'saturate';            // the function used to manipulate the colors [darken]
+$col-change: 20;                    // how much the color should change [50]
+$color-func: 'darken';              // the function used to manipulate the colors [darken]
 
-$duration-max: 10;                  // maximal animation duration (biggest spinning wheel) [4]
-$duration-min: 7;                   // minimal animiaton duration (smallest spinning wheel) [1]
+$bg-color: #C4C4C4;                 // background color [transparent]
+$bg-padding: 1rem;                  // background overlap [0]
+$shadow: 0 0 1rem .5rem;            // box / bg shadow [0 0 0 0]
+
+$duration-max: 6;                   // maximal animation duration (biggest spinning wheel) [4]
+$duration-min: 4;                   // minimal animiaton duration (smallest spinning wheel) [1]
 $fps: 60;                           // desired FPS [60]
 ```
 
