@@ -40,16 +40,20 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
+  background-color: #FFFFC4;
+  box-shadow: 0 0 0 0 #FFFFC4;
   width: 9rem;
   height: 9rem;
-  padding: 6;
   letter-spacing: 6px; }
   .hypnoload span {
     display: block;
     border: 0.75rem solid transparent;
     border-top-color: #DA4826;
+    border-left-color: transparent;
     border-bottom-color: #DA4826;
+    border-right-color: transparent;
     border-radius: 50%;
     animation: hypnoload-spin 7s steps(420) infinite;
     position: absolute;
@@ -98,43 +102,97 @@ section {
     animation-timing-function: steps(120); }
   .hypnoload.hyl-reverse span:nth-child(even) {
     animation-direction: reverse; }
-  .hypnoload.hyl-rounded span {
+  .hypnoload.hyl-rounded {
+    width: 10.5rem;
+    height: 10.5rem; }
+    .hypnoload.hyl-rounded span {
+      box-shadow: 0 0.75rem 0 #DA4826, 0 -0.75rem 0 #DA4826, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent;
+      border-color: transparent; }
+    .hypnoload.hyl-rounded span:nth-child(1) {
+      left: 0.75rem;
+      top: 0.75rem; }
+    .hypnoload.hyl-rounded span:nth-child(2) {
+      left: 1.5rem;
+      top: 1.5rem; }
+    .hypnoload.hyl-rounded span:nth-child(3) {
+      left: 2.25rem;
+      top: 2.25rem; }
+    .hypnoload.hyl-rounded span:nth-child(4) {
+      left: 3rem;
+      top: 3rem; }
+    .hypnoload.hyl-rounded span:nth-child(5) {
+      left: 3.75rem;
+      top: 3.75rem; }
+    .hypnoload.hyl-rounded span:nth-child(6) {
+      left: 4.5rem;
+      top: 4.5rem; }
+  .hypnoload.hyl-rounded-simple span {
     box-shadow: 0 0.75rem 0 #DA4826;
-    border-color: transparent; }
+    border-color: transparent !important; }
   .hypnoload.hyl-colors span:nth-child(1) {
     border-top-color: #c94222;
-    border-bottom-color: #c94222; }
+    border-bottom-color: #c94222;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(1) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #c94222, 0 -0.75rem 0 #c94222, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(1) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #c94222; }
   .hypnoload.hyl-colors span:nth-child(2) {
     border-top-color: #b63c1f;
-    border-bottom-color: #b63c1f; }
+    border-bottom-color: #b63c1f;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(2) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #b63c1f, 0 -0.75rem 0 #b63c1f, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(2) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #b63c1f; }
   .hypnoload.hyl-colors span:nth-child(3) {
     border-top-color: #a4361c;
-    border-bottom-color: #a4361c; }
+    border-bottom-color: #a4361c;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(3) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #a4361c, 0 -0.75rem 0 #a4361c, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(3) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #a4361c; }
   .hypnoload.hyl-colors span:nth-child(4) {
     border-top-color: #923019;
-    border-bottom-color: #923019; }
+    border-bottom-color: #923019;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(4) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #923019, 0 -0.75rem 0 #923019, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(4) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #923019; }
   .hypnoload.hyl-colors span:nth-child(5) {
     border-top-color: #802a16;
-    border-bottom-color: #802a16; }
+    border-bottom-color: #802a16;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(5) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #802a16, 0 -0.75rem 0 #802a16, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(5) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #802a16; }
   .hypnoload.hyl-colors span:nth-child(6) {
     border-top-color: #6e2413;
-    border-bottom-color: #6e2413; }
+    border-bottom-color: #6e2413;
+    border-left-color: transparent;
+    border-right-color: transparent; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(6) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #6e2413, 0 -0.75rem 0 #6e2413, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent; }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(6) {
     border-color: transparent;
     box-shadow: 0 0.75rem 0 #6e2413; }
 

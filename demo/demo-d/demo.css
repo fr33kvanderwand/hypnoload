@@ -1,0 +1,136 @@
+/**
+ *  demo D
+ */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0; }
+
+section {
+  height: 20rem;
+  width: 50%;
+  float: left;
+  position: relative; }
+  section:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+/**
+ *  hypnoload.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+/**
+ *  hypnoload.style.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+@keyframes hypnoload-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(720deg); } }
+.hypnoload,
+.hypnoload * {
+  box-sizing: border-box; }
+
+.hypnoload {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #C4FFC4;
+  box-shadow: 0 0 2rem 2rem #C4FFC4;
+  width: 5rem;
+  height: 5rem;
+  letter-spacing: 3px; }
+  .hypnoload span {
+    display: block;
+    border: 0.75rem solid transparent;
+    border-top-color: #42D6A8;
+    border-left-color: transparent;
+    border-bottom-color: #42D6A8;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: hypnoload-spin 7s steps(420) infinite;
+    position: absolute;
+    will-change: transform; }
+  .hypnoload span:nth-child(1) {
+    left: 0.25rem;
+    top: 0.25rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    animation-duration: 7s;
+    animation-timing-function: steps(420); }
+  .hypnoload span:nth-child(2) {
+    left: 0.75rem;
+    top: 0.75rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    animation-duration: 6.66667s;
+    animation-timing-function: steps(400); }
+  .hypnoload span:nth-child(3) {
+    left: 1.25rem;
+    top: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation-duration: 6.33333s;
+    animation-timing-function: steps(380); }
+  .hypnoload.hyl-reverse span:nth-child(even) {
+    animation-direction: reverse; }
+  .hypnoload.hyl-rounded {
+    width: 6.5rem;
+    height: 6.5rem; }
+    .hypnoload.hyl-rounded span {
+      box-shadow: 0 0.75rem 0 #42D6A8, 0 -0.75rem 0 #42D6A8, 0.75rem 0 0 transparent, -0.75rem 0 0 transparent;
+      border-color: transparent; }
+    .hypnoload.hyl-rounded span:nth-child(1) {
+      left: 1rem;
+      top: 1rem; }
+    .hypnoload.hyl-rounded span:nth-child(2) {
+      left: 1.5rem;
+      top: 1.5rem; }
+    .hypnoload.hyl-rounded span:nth-child(3) {
+      left: 2rem;
+      top: 2rem; }
+  .hypnoload.hyl-rounded-simple span {
+    box-shadow: 0 0.75rem 0 #42D6A8;
+    border-color: transparent !important; }
+  .hypnoload.hyl-colors span:nth-child(1) {
+    border-top-color: #96e8cf;
+    border-bottom-color: #96e8cf;
+    border-left-color: rgba(51, 51, 51, 0);
+    border-right-color: rgba(51, 51, 51, 0); }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(1) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #96e8cf, 0 -0.75rem 0 #96e8cf, 0.75rem 0 0 rgba(51, 51, 51, 0), -0.75rem 0 0 rgba(51, 51, 51, 0); }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(1) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #96e8cf; }
+  .hypnoload.hyl-colors span:nth-child(2) {
+    border-top-color: #7ae2c2;
+    border-bottom-color: #7ae2c2;
+    border-left-color: rgba(34, 34, 34, 0);
+    border-right-color: rgba(34, 34, 34, 0); }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(2) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #7ae2c2, 0 -0.75rem 0 #7ae2c2, 0.75rem 0 0 rgba(34, 34, 34, 0), -0.75rem 0 0 rgba(34, 34, 34, 0); }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(2) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #7ae2c2; }
+  .hypnoload.hyl-colors span:nth-child(3) {
+    border-top-color: #5edcb5;
+    border-bottom-color: #5edcb5;
+    border-left-color: rgba(17, 17, 17, 0);
+    border-right-color: rgba(17, 17, 17, 0); }
+  .hypnoload.hyl-colors.hyl-rounded span:nth-child(3) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #5edcb5, 0 -0.75rem 0 #5edcb5, 0.75rem 0 0 rgba(17, 17, 17, 0), -0.75rem 0 0 rgba(17, 17, 17, 0); }
+  .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(3) {
+    border-color: transparent;
+    box-shadow: 0 0.75rem 0 #5edcb5; }
+
+/*# sourceMappingURL=demo.css.map */

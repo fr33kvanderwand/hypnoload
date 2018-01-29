@@ -1,5 +1,5 @@
 /**
- *  demo B
+ *  demo D
  */
 * {
   box-sizing: border-box; }
@@ -44,93 +44,93 @@ section {
   transform: translate(-50%, -50%);
   background-color: transparent;
   box-shadow: 0 0 0 0 transparent;
-  width: 6.2rem;
-  height: 6.2rem;
+  width: 4rem;
+  height: 4rem;
   letter-spacing: 3px; }
   .hypnoload span {
     display: block;
-    border: 0.6rem solid transparent;
-    border-top-color: #FF0000;
-    border-left-color: #F0F000;
-    border-bottom-color: #0000FF;
-    border-right-color: #00FF00;
+    border: 0.5rem solid transparent;
+    border-top-color: #42D6A8;
+    border-left-color: #64C0CA;
+    border-bottom-color: #42D6A8;
+    border-right-color: #64C0CA;
     border-radius: 50%;
-    animation: hypnoload-spin 3s steps(180) infinite;
+    animation: hypnoload-spin 7s steps(420) infinite;
     position: absolute;
     will-change: transform; }
   .hypnoload span:nth-child(1) {
     left: 0rem;
     top: 0rem;
-    width: 6.2rem;
-    height: 6.2rem;
-    animation-duration: 3s;
-    animation-timing-function: steps(180); }
+    width: 4rem;
+    height: 4rem;
+    animation-duration: 7s;
+    animation-timing-function: steps(420); }
   .hypnoload span:nth-child(2) {
     left: 0.5rem;
     top: 0.5rem;
-    width: 5.2rem;
-    height: 5.2rem;
-    animation-duration: 2.5s;
-    animation-timing-function: steps(150); }
+    width: 3rem;
+    height: 3rem;
+    animation-duration: 6.66667s;
+    animation-timing-function: steps(400); }
   .hypnoload span:nth-child(3) {
     left: 1rem;
     top: 1rem;
-    width: 4.2rem;
-    height: 4.2rem;
-    animation-duration: 2s;
-    animation-timing-function: steps(120); }
+    width: 2rem;
+    height: 2rem;
+    animation-duration: 6.33333s;
+    animation-timing-function: steps(380); }
   .hypnoload.hyl-reverse span:nth-child(even) {
     animation-direction: reverse; }
   .hypnoload.hyl-rounded {
-    width: 7.4rem;
-    height: 7.4rem; }
+    width: 5rem;
+    height: 5rem; }
     .hypnoload.hyl-rounded span {
-      box-shadow: 0 0.6rem 0 #0000FF, 0 -0.6rem 0 #FF0000, 0.6rem 0 0 #00FF00, -0.6rem 0 0 #F0F000;
+      box-shadow: 0 0.5rem 0 #42D6A8, 0 -0.5rem 0 #42D6A8, 0.5rem 0 0 #64C0CA, -0.5rem 0 0 #64C0CA;
       border-color: transparent; }
     .hypnoload.hyl-rounded span:nth-child(1) {
-      left: 0.6rem;
-      top: 0.6rem; }
+      left: 0.5rem;
+      top: 0.5rem; }
     .hypnoload.hyl-rounded span:nth-child(2) {
-      left: 1.1rem;
-      top: 1.1rem; }
+      left: 1rem;
+      top: 1rem; }
     .hypnoload.hyl-rounded span:nth-child(3) {
-      left: 1.6rem;
-      top: 1.6rem; }
+      left: 1.5rem;
+      top: 1.5rem; }
   .hypnoload.hyl-rounded-simple span {
-    box-shadow: 0 0.6rem 0 #FF0000;
+    box-shadow: 0 0.5rem 0 #42D6A8;
     border-color: transparent !important; }
   .hypnoload.hyl-colors span:nth-child(1) {
-    border-top-color: #ff8080;
-    border-bottom-color: #8080ff;
-    border-left-color: #ffff71;
-    border-right-color: #80ff80; }
+    border-top-color: #29bc8e;
+    border-bottom-color: #29bc8e;
+    border-left-color: #40afbb;
+    border-right-color: #40afbb; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(1) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #8080ff, 0 -0.6rem 0 #ff8080, 0.6rem 0 0 #80ff80, -0.6rem 0 0 #ffff71; }
+    box-shadow: 0 0.5rem 0 #29bc8e, 0 -0.5rem 0 #29bc8e, 0.5rem 0 0 #40afbb, -0.5rem 0 0 #40afbb; }
   .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(1) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #ff8080; }
+    box-shadow: 0 0.5rem 0 #29bc8e; }
   .hypnoload.hyl-colors span:nth-child(2) {
-    border-top-color: #ff5555;
-    border-bottom-color: #5555ff;
-    border-left-color: #ffff46;
-    border-right-color: #55ff55; }
+    border-top-color: #2cca99;
+    border-bottom-color: #2cca99;
+    border-left-color: #4bb6c1;
+    border-right-color: #4bb6c1; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(2) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #5555ff, 0 -0.6rem 0 #ff5555, 0.6rem 0 0 #55ff55, -0.6rem 0 0 #ffff46; }
+    box-shadow: 0 0.5rem 0 #2cca99, 0 -0.5rem 0 #2cca99, 0.5rem 0 0 #4bb6c1, -0.5rem 0 0 #4bb6c1; }
   .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(2) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #ff5555; }
+    box-shadow: 0 0.5rem 0 #2cca99; }
   .hypnoload.hyl-colors span:nth-child(3) {
-    border-top-color: #ff2b2b;
-    border-bottom-color: #2b2bff;
-    border-left-color: #ffff1c;
-    border-right-color: #2bff2b; }
+    border-top-color: #34d3a2;
+    border-bottom-color: #34d3a2;
+    border-left-color: #57bbc6;
+    border-right-color: #57bbc6; }
   .hypnoload.hyl-colors.hyl-rounded span:nth-child(3) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #2b2bff, 0 -0.6rem 0 #ff2b2b, 0.6rem 0 0 #2bff2b, -0.6rem 0 0 #ffff1c; }
+    box-shadow: 0 0.5rem 0 #34d3a2, 0 -0.5rem 0 #34d3a2, 0.5rem 0 0 #57bbc6, -0.5rem 0 0 #57bbc6; }
   .hypnoload.hyl-colors.hyl-rounded-simple span:nth-child(3) {
     border-color: transparent;
-    box-shadow: 0 0.6rem 0 #ff2b2b; }
+    box-shadow: 0 0.5rem 0 #34d3a2; }
 
 /*# sourceMappingURL=demo.css.map */
