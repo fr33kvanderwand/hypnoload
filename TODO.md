@@ -1,7 +1,6 @@
 # TODO
 
 ## Features
-- "bg-color"
 - minify/uglify-js
 - live-demo
 

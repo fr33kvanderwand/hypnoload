@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
 ### Added
 - nothing
 
@@ -14,6 +15,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 - nothing
+
+## [1.1.0] - 2018-01-29
+### Added
+- `$bg-color` -  background color
+- `$bg-padding` - background overlap
+- `$color-sec`, `$color-ter` & `$color-qua` - more color options
+- `$colors-sec`, `$colors-ter` & `$colors-qua` - colors list for new $color-* options
+- `none`- new color-func option
+- `hyl-rounded-simple` - class for old rounded design
+- `$shadow:` - background shadow (not pixelperfect in FF)
+- `src/demo-d/` - Demo D: background-demo
+- `src/demo-e/` - Demo E: background-demo
+
+### Changed
+- improved `hyl-rounded` design
+- [`build-demo.sh`](./build-demo.sh) - added Demo D & E
+- [`demo/index.html`](./src/demo/index.html) - added Demo D & E
+
+
+## [1.0.1] - 2018-01-25
+### Removed
+- `padding: length($colors);` - used to check length of $colors-list; not productive - dev-code;
 
 ## [1.0.0] - 2018-01-23
 ### Added
@@ -39,5 +62,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [`demo/demo-c/demo.scss`](./src/demo/demo-c/demo.scss) - style for demo c
 - [`demo/demo-c/hypnoload.style.scss`](./src/demo/demo-c/hypnoload.style.scss) - hypnoload-style (config) for demo c
 
-[Unreleased]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/fr33kvanderwand/hypnoload/compare/master...develop
+[1.1.0]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.1...v1.1.0
+[1.0.1]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/fr33kvanderwand/hypnoload/tree/v1.0.0

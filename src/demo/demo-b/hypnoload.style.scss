@@ -7,8 +7,15 @@ $width: .5rem;                              // thickness of a spinning-wheel [1r
 $overlap: .1;                               // how much a spinning-wheel overlaps the next one [0]
 $inner-space: 3;                            // 'missing' inner spinning wheel [0]
 
-$color: #2648DA;                            // base fill color [#C4C4C4]
-$colors: (#FF0000,#00FF00,#0000FF);               // defines a color for each spinning-wheel [()]
+$color: #FF0000;                            // primary fill color [#C4C4C4]
+$color-sec: #00FF00;                        // secondary color [transparent]
+$color-ter: #0000FF;                        // tertiary color [transparent]
+$color-qua: #F0F000;                        // quaternary color [trasnparent]
+$color-dir: 'out';                          // in which 'direction' the color manipulation should go ['in']
+$col-change: 25;                            // how much the color should change [50]
+$color-func: 'lighten';                     // the function used to calculate the colors [darken]
 
 $duration-max: 3;                           // maximal animation duration (biggest spinning wheel) [4]
 $duration-min: .5;                          // minimal animiaton duration (smallest spinning wheel) [1]
+
+
