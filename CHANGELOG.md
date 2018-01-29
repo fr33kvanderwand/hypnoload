@@ -9,12 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `$bg-color` -  background color
 - `$bg-padding` - background overlap
+- `$color-sec`, `$color-ter` & `$color-qua` - more color options
+- `$colors-sec`, `$colors-ter` & `$colors-qua` - colors list for new $color-* options
+- `none`- new color-func option
+- `hyl-rounded-simple` - class for old rounded design
 - `$shadow:` - background shadow (not pixelperfect in FF)
 - `src/demo-d/` - Demo D: background-demo
+- `src/demo-e/` - Demo E: background-demo
 
 ### Changed
-- [`build-demo.sh`](./build-demo.sh) - added Demo D
-- [`demo/index.html`](./src/demo/index.html) - added Demo D
+- improved `hyl-rounded` design
+- [`build-demo.sh`](./build-demo.sh) - added Demo D & E
+- [`demo/index.html`](./src/demo/index.html) - added Demo D & E
 
 ### Removed
 - nothing

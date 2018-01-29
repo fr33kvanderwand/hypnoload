@@ -1,0 +1,16 @@
+/**
+ *  hypnoload.style.scss
+ *    the hypnotic loading animation - by Freek van der Wand
+ */
+
+$width: .5rem;              // thickness of a spinning-wheel [1rem]
+$count: 3;                  // how many spinning-wheels [3]
+$inner-space: 1;            // 'missing' inner spinning wheel [0]
+
+$color: #42D6A8;            // base fill color [#C4C4C4]
+$color-sec: #64C0CA;        //
+$color-dir: 'out';          // in which 'direction' the color manipulation should go ['in']
+$col-change: 10;            // how much the color should change [50]
+
+$duration-max: 7;           // maximal animation duration (biggest spinning wheel) [4]
+$duration-min: 6;           // minimal animiaton duration (smallest spinning wheel) [1]

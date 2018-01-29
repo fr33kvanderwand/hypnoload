@@ -33,6 +33,12 @@ $inner-space: 1;                    // 'missing' inner spinning wheel [0]
 
 $color: #DA4826;                    // base fill color [#C4C4C4]
 $colors: ();                        // defines a color for each spinning-wheel [()]
+$color-sec: transparent;            // secondary color [transparent]
+$colors-sec: ();                    // [()]
+$color-ter: transparent;            // tertiary[transparent]
+$colors-ter: ();                    // [()]
+$color-qua: transparent;            // quaternary color [trasnparent]
+$colors-qua: ();                    // [()]
 $color-dir: 'in';                   // in which 'direction' the color manipulation should go ['in']
 $col-change: 20;                    // how much the color should change [50]
 $color-func: 'darken';              // the function used to manipulate the colors [darken]
@@ -46,11 +52,13 @@ $duration-min: 4;                   // minimal animiaton duration (smallest spin
 $fps: 60;                           // desired FPS [60]
 ```
 
-supported color-functions: `lighten`, `darken `, `saturate` & `desaturate`;  
+supported color-functions: `lighten`, `darken `, `saturate`, `desaturate` & `none`;  
 add `hyl-reverse` class to spin every second spinning wheel in reverse direction;  
-add `hyl-rounded` class for rounded spinning wheels;  
 add `hyl-colors` class to give each 'spinning wheel' it's own color;  
+add `hyl-rounded` class for rounded spinning wheels, combine it with `hyl-rounded-simple` for a simplier design;  
+
 `hyl-reverse`, `hyl-rounded` & `hyl-colors` can be combined;  
+`hyl-rounded-simple` uses only `$color`and `$colors`;  
 `$count` is also the value for `letter-spacing`, what is used to add spans via JS;
 
 ### Build

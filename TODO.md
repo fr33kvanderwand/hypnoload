@@ -1,7 +1,6 @@
 # TODO
 
 ## Features
-- 1-2-4-color support
 - minify/uglify-js
 - live-demo
 
