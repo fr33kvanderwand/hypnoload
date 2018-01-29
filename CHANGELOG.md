@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Added
+- nothing
+
+### Changed
+- nothing
+
+### Removed
+- nothing
+
+## [1.1.0] - 2018-01-29
 ### Added
 - `$bg-color` -  background color
 - `$bg-padding` - background overlap
@@ -22,8 +33,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [`build-demo.sh`](./build-demo.sh) - added Demo D & E
 - [`demo/index.html`](./src/demo/index.html) - added Demo D & E
 
-### Removed
-- nothing
 
 ## [1.0.1] - 2018-01-25
 ### Removed
@@ -54,5 +63,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - [`demo/demo-c/hypnoload.style.scss`](./src/demo/demo-c/hypnoload.style.scss) - hypnoload-style (config) for demo c
 
 [Unreleased]: https://github.com/fr33kvanderwand/hypnoload/compare/master...develop
+[1.1.0]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/fr33kvanderwand/hypnoload/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/fr33kvanderwand/hypnoload/tree/v1.0.0
