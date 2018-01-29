@@ -8,13 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ### Added
-- nothing
+- [`src/demo/demo.html`](./src/demo/demo.html) - refactored demo html
 
 ### Changed
-- nothing
+- [`build-demo.sh`](./build-demo.sh) -  updated to new demo-structure
 
 ### Removed
-- nothing
+- `demo-*/index.html` - replaced through [`src/demo/demo.html`](./src/demo/demo.html)
 
 ## [1.1.0] - 2018-01-29
 ### Added

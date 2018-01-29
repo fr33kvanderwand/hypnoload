@@ -26,8 +26,8 @@ cp ./src/hypnoload.js ./demo/demo-e/
 
 # copy html
 cp ./src/demo/index.html ./demo/
-cp ./src/demo/demo-a/index.html ./demo/demo-a/
-cp ./src/demo/demo-b/index.html ./demo/demo-b/
-cp ./src/demo/demo-c/index.html ./demo/demo-c/
-cp ./src/demo/demo-d/index.html ./demo/demo-d/
-cp ./src/demo/demo-e/index.html ./demo/demo-e/
+cp ./src/demo/demo.html ./demo/demo-a/index.html
+cp ./src/demo/demo.html ./demo/demo-b/index.html
+cp ./src/demo/demo.html ./demo/demo-c/index.html
+cp ./src/demo/demo.html ./demo/demo-d/index.html
+cp ./src/demo/demo.html ./demo/demo-e/index.html
